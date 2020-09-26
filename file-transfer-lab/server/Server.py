@@ -1,6 +1,6 @@
 #! /usr/bin/python3
 
-import os, socket, re, random
+import os, socket, re 
 
 files = {}
 key = '0'
@@ -10,11 +10,16 @@ serverSocket.listen(1)
 
 connection, address = serverSocket.accept()
 connection.send(key.encode())
+filename = ''
+content = ''
 while True:
     data = connection.recv(1024).decode()
-    filename = ''
-    content = ''
-    if not data: break
+    if not data:
+        if filename not in files: 
+            fileSource = './files/' + filename
+            os.remove(fileSource)
+            print('Deleting File: %s' %filename)
+        break
     if data == 'exit': break
 
     payload = re.split(':', data)
