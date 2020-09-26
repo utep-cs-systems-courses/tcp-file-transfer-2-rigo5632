@@ -12,6 +12,8 @@ connection, address = serverSocket.accept()
 connection.send(key.encode())
 while True:
     data = connection.recv(1024).decode()
+    filename = ''
+    content = ''
     if not data: break
     if data == 'exit': break
 
