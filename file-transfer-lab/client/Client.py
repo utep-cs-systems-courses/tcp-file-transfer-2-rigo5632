@@ -4,30 +4,49 @@ import os, socket
 
 def fileExists(fileName):
     try:
-        file = open(fileName, 'r')
+        fileSource = './files/' + fileName
+        file = open(fileSource, 'r')
     except FileNotFoundError:
         print('Error: Could not find file')
         return None, False
-    return file, file.read()
+    except PermissionError:
+        print('Error: Invalid Address')
+        return None, False
+    return file, file.readlines()
+
+def createPayload(key, filename, data):
+    for i in range(len(data)):
+        data[i] = key + ':' + filename + ':' + data[i]
+    return data
 
 clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 clientSocket.connect(('127.0.0.1', 50001))
 continueConnection = True
+print('Enter exit to quit program')
 
 while continueConnection:
+    key = clientSocket.recv(1024).decode()
     fileName = input('File name: ')
+    if fileName == 'exit': 
+        clientSocket.send(fileName.encode())
+        break
     file, data = fileExists(fileName)
+
+    data = createPayload(key, fileName, data) if file else False
 
     if file:
         if data:
-            payload = (fileName + ':' + data)
-            clientSocket.send(payload.encode())
-
+            for payload in data:
+                print('Sending: %s' %payload)
+                clientSocket.send(payload.encode())
             file.close()
-            data = clientSocket.recv(1024).decode()
-            print(data)
+            key = str(int(key) + 1)
+            clientSocket.send(key.encode())
         else:
             print('%s has no data' %fileName)
+            clientSocket.send(key.encode())
+    
+    if not data: key = clientSocket.send(key.encode())
 clientSocket.close()
 
 
