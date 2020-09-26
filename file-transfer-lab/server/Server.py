@@ -1,6 +1,6 @@
 #! /usr/bin/python3
 
-import os, socket, re 
+import os, socket, re
 
 files = {}
 key = '0'

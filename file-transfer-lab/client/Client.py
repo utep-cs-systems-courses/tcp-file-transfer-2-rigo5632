@@ -25,7 +25,11 @@ continueConnection = True
 print('Enter exit to quit program')
 
 while continueConnection:
-    key = clientSocket.recv(1024).decode()
+    try:
+        key = clientSocket.recv(1024).decode()
+    except ConnectionResetError:
+        print('Error: Lost Connection to Server')
+        break
     fileName = input('File name: ')
     if fileName == 'exit': 
         clientSocket.send(fileName.encode())
