@@ -44,7 +44,6 @@ def createPayload(key, filename, data):
 
 clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 clientSocket.connect((serverHost, serverPort))
-
 while True:
     try:
         key = clientSocket.recv(1024).decode() if not proxy else framedReceive(clientSocket, False).decode()
@@ -53,7 +52,8 @@ while True:
         print('Error: Lost Connection to Server')
         break
 
-    fileName = input('File name: ')
+    print('put <local-name> <remote-name>')
+    fileName = input('> ')
     if fileName == 'exit': 
         clientSocket.send(fileName.encode()) if not proxy else framedSend(clientSocket, fileName.encode(), False)
         break
@@ -64,9 +64,9 @@ while True:
     if file:
         if data:
             for payload in data:
-                print('Sending: %s' %payload, end='')
+                print('Transfering: %s' %payload, end='')
                 clientSocket.send(payload.encode()) if not proxy else framedSend(clientSocket, payload.encode(), False)
-                time.sleep(.0010)
+                time.sleep(.1)
             file.close()
             key = str(int(key) + 1)
             clientSocket.send(key.encode()) if not proxy else framedSend(clientSocket, key.encode(), False)

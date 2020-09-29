@@ -31,10 +31,13 @@ content = ''
 while True:
     data = connection.recv(1024).decode() if not proxy else framedReceive(connection, False)
     if not data:
-        if filename not in files: 
-            fileSource = './files/' + filename
-            os.remove(fileSource)
-            print('Deleting File: %s' %filename)
+        try:
+            if filename not in files: 
+                fileSource = './files/' + filename
+                os.remove(fileSource)
+                print('Deleting File: %s' %filename)
+        except:
+            print('No filename')
         break
     if proxy: data = data.decode()
     if data == 'exit': break
@@ -48,7 +51,6 @@ while True:
         connection.send(key.encode()) if not proxy else framedSend(connection, key.encode(), False)
         print('Sending File Key...')
     else:
-        print(payload)
         key = payload[0]
         filename = payload[1]
         content = payload[2]
@@ -57,7 +59,7 @@ while True:
         fileDestination = './files/' + filename
         file = open(fileDestination, 'a')
 
-        print('Writing to file %s' %filename)
+        print('Writing to %s' %filename)
 
         file.write(content)
         file.close()
