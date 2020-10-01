@@ -66,5 +66,6 @@ while True:
     else:
         if filename:
             print('%s found in server' %filename)
+            print('Not writing data...')
 
 connection.close()

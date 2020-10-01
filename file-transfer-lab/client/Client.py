@@ -51,30 +51,48 @@ while True:
     except ConnectionResetError:
         print('Error: Lost Connection to Server')
         break
+    
+    userInput = str(input('> '))
+    tokens = re.split(' +', userInput)
 
-    print('put <local-name> <remote-name>')
-    fileName = input('> ')
-    if fileName == 'exit': 
-        clientSocket.send(fileName.encode()) if not proxy else framedSend(clientSocket, fileName.encode(), False)
+    if len(tokens) == 3:
+        command = tokens[0]
+        localFileName = tokens[1]
+        remoteFileName = tokens[2]
+    elif len(tokens) == 2:
+        command = tokens[0]
+        localFileName = tokens[1]
+        remoteFileName = localFileName
+    elif len(tokens) == 1 and tokens[0] == 'exit':
+        clientSocket.send(tokens[0].encode()) if not proxy else framedSend(clientSocket, tokens[0].encode(), False)
         break
-    file, data = fileExists(fileName)
+    else:
+        command = None
+        localFileName = None
+        remoteFileName = None
+    
+    if len(tokens) >= 2 and command == 'put':
+        file, data = fileExists(localFileName)
 
-    data = createPayload(key, fileName, data) if file else False
+        data = createPayload(key, remoteFileName, data) if file else False
 
-    if file:
-        if data:
+        if file and data:
             for payload in data:
-                print('Transfering: %s' %payload, end='')
+                print('Sending: %s' %payload, end = ' ')
                 clientSocket.send(payload.encode()) if not proxy else framedSend(clientSocket, payload.encode(), False)
-                time.sleep(.1)
+                time.sleep(.3)
             file.close()
             key = str(int(key) + 1)
             clientSocket.send(key.encode()) if not proxy else framedSend(clientSocket, key.encode(), False)
-        else:
-            print('%s has no data' %fileName)
+        elif file and not data:
+            print('%s has no data' %localFileName)
             clientSocket.send(key.encode()) if not proxy else framedSend(clientSocket, key.encode(), False)
-    
-    if not data: key = clientSocket.send(key.encode()) if not proxy else framedSend(clientSocket, key.encode(), False)
+        else:
+            clientSocket.send(key.encode()) if not proxy else framedSend(clientSocket, key.encode(), False)
+    else:
+        print('Invalid Syntax!')
+        print('put <local-file-name> <remote-file-name>')
+        clientSocket.send(key.encode()) if not proxy else framedSend(clientSocket, key.encode(), False)
 clientSocket.close()
 
 
