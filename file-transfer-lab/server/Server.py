@@ -22,50 +22,99 @@ files = {}
 key = '0'
 serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 serverSocket.bind(('', listenPort))
-serverSocket.listen(1)
+serverSocket.listen(5)
 
-connection, address = serverSocket.accept()
-connection.send(key.encode()) if not proxy else framedSend(connection, key.encode(), False)
-filename = ''
-content = ''
 while True:
-    data = connection.recv(1024).decode() if not proxy else framedReceive(connection, False)
-    if not data:
-        try:
-            if filename not in files: 
-                fileSource = './files/' + filename
-                os.remove(fileSource)
-                print('Deleting File: %s' %filename)
-        except:
-            print('No filename')
-        break
-    if proxy: data = data.decode()
-    if data == 'exit': break
+    connection, address = serverSocket.accept()
+    connection.send(key.encode()) if not proxy else framedSend(connection, key.encode(), False)
+    filename = ''
+    content = ''
 
-    payload = re.split(':', data)
-    if len(payload) == 1:
-        key = payload[0]
-        files[filename] = -1
-        filename = None
-        content = None
-        connection.send(key.encode()) if not proxy else framedSend(connection, key.encode(), False)
-        print('Sending File Key...')
-    else:
-        key = payload[0]
-        filename = payload[1]
-        content = payload[2]
+    if not os.fork():
+        while True:
+            data = connection.recv(1024).decode() if not proxy else framedReceive(connection, False)
+            if not data:
+                try:
+                    if filename not in files: 
+                        fileSource = './files/' + filename
+                        os.remove(fileSource)
+                        print('Deleting File: %s' %filename)
+                except:
+                    print('No filename')
+                break
+            if proxy: data = data.decode()
+            if data == 'exit': break
 
-    if filename not in files and filename is not None:
-        fileDestination = './files/' + filename
-        file = open(fileDestination, 'a')
+            payload = re.split(':', data)
+            if len(payload) == 1:
+                key = payload[0]
+                files[filename] = -1
+                filename = None
+                content = None
+                connection.send(key.encode()) if not proxy else framedSend(connection, key.encode(), False)
+                print('Sending File Key...')
+            else:
+                key = payload[0]
+                filename = payload[1]
+                content = payload[2]
 
-        print('Writing to %s' %filename)
+            if filename not in files and filename is not None:
+                fileDestination = './files/' + filename
+                file = open(fileDestination, 'a')
 
-        file.write(content)
-        file.close()
-    else:
-        if filename:
-            print('%s found in server' %filename)
-            print('Not writing data...')
+                print('Writing to %s' %filename)
 
-connection.close()
+                file.write(content)
+                file.close()
+            else:
+                if filename:
+                    print('%s found in server' %filename)
+                    print('Not writing data...')
+        connection.close()
+
+
+# connection, address = serverSocket.accept()
+# connection.send(key.encode()) if not proxy else framedSend(connection, key.encode(), False)
+# filename = ''
+# content = ''
+# while True:
+#     data = connection.recv(1024).decode() if not proxy else framedReceive(connection, False)
+#     if not data:
+#         try:
+#             if filename not in files: 
+#                 fileSource = './files/' + filename
+#                 os.remove(fileSource)
+#                 print('Deleting File: %s' %filename)
+#         except:
+#             print('No filename')
+#         break
+#     if proxy: data = data.decode()
+#     if data == 'exit': break
+
+#     payload = re.split(':', data)
+#     if len(payload) == 1:
+#         key = payload[0]
+#         files[filename] = -1
+#         filename = None
+#         content = None
+#         connection.send(key.encode()) if not proxy else framedSend(connection, key.encode(), False)
+#         print('Sending File Key...')
+#     else:
+#         key = payload[0]
+#         filename = payload[1]
+#         content = payload[2]
+
+#     if filename not in files and filename is not None:
+#         fileDestination = './files/' + filename
+#         file = open(fileDestination, 'a')
+
+#         print('Writing to %s' %filename)
+
+#         file.write(content)
+#         file.close()
+#     else:
+#         if filename:
+#             print('%s found in server' %filename)
+#             print('Not writing data...')
+
+# connection.close()
