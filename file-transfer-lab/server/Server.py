@@ -26,13 +26,15 @@ serverSocket.listen(5)
 
 while True:
     connection, address = serverSocket.accept()
-    connection.send(key.encode()) if not proxy else framedSend(connection, key.encode(), False)
+    #connection.send(key.encode()) if not proxy else framedSend(connection, key.encode(), False)
+    framedSend(connection, key.encode(), False)
     filename = ''
     content = ''
 
     if not os.fork():
         while True:
-            data = connection.recv(1024).decode() if not proxy else framedReceive(connection, False)
+            #data = connection.recv(1024).decode() if not proxy else framedReceive(connection, False)
+            data = framedReceive(connection, False).decode()
             if not data:
                 try:
                     if filename not in files: 
@@ -51,7 +53,8 @@ while True:
                 files[filename] = -1
                 filename = None
                 content = None
-                connection.send(key.encode()) if not proxy else framedSend(connection, key.encode(), False)
+                #connection.send(key.encode()) if not proxy else framedSend(connection, key.encode(), False)
+                framedSend(connection, key.encode(), False)
                 print('Sending File Key...')
             else:
                 key = payload[0]
