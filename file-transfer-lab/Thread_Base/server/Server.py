@@ -1,10 +1,8 @@
-#! /usr/bin/python3
 import os, socket, re, sys
-sys.path.append('../../lib')
+sys.path.append('../lib')
 import params
-sys.path.append('../../framed-echo')
-from framedSock import framedReceive, framedSend
-
+from encapFramedSock import EncapFramedSock
+from threading import Thread
 
 switchesVarDefaults = (
     (('-l', '--listentPort'), 'listenPort', 50001),
@@ -15,59 +13,77 @@ switchesVarDefaults = (
 paramMap = params.parseParams(switchesVarDefaults)
 listenPort, proxy, usage = paramMap['listenPort'], paramMap['proxy'], paramMap['usage']
 
-if usage:
-    params.usage()
+if usage: params.usage()
 
-files = {}
-key = '0'
-serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-serverSocket.bind(('', listenPort))
-serverSocket.listen(5)
+listenerSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+listenerSocket.bind(('', listenPort))
+listenerSocket.listen(5)
+print('listening...')
 
-while True:
-    connection, address = serverSocket.accept()
-    framedSend(connection, key.encode(), False)
-    filename = ''
-    content = ''
+serverFiles = os.listdir('./Files/')
+inProgressFiles = {}
+key = '-1'
 
-    if not os.fork():
+class Server(Thread):
+    def __init__(self, connection):
+        Thread.__init__(self)
+        self.clientSocket, self.clientAddress = connection
+        self.framedSocket = EncapFramedSock(connection)
+    def run(self):
+        global key, serverFiles, inProgressFiles
+        self.framedSocket.send(key.encode(), False)
+        filename = ''
+        content = ''
+        
         while True:
-            data = framedReceive(connection, False).decode()
+            data = self.framedSocket.receive(False)
             if not data:
-                try:
-                    if filename not in files: 
-                        fileSource = './files/' + filename
-                        os.remove(fileSource)
-                        print('Deleting File: %s' %filename)
-                except:
-                    print('No filename')
-                break
-            if proxy: data = data.decode()
-            if data == 'exit': break
-
+                if filename in inProgressFiles.keys() and filename not in serverFiles:
+                    file = './Files/' + filename
+                    os.remove(file)
+                    print('Deleting File: %s' %filename)
+                return
+            data = data.decode()
             payload = re.split(':', data)
             if len(payload) == 1:
                 key = payload[0]
-                files[filename] = -1
+                if filename in inProgressFiles.keys(): del inProgressFiles[filename]
+                serverFiles.append(filename)
                 filename = None
                 content = None
-                framedSend(connection, key.encode(), False)
-                print('Sending File Key...')
+                print('Saving File Key...')
+
+                print('Server Files: ', serverFiles)
+                print('In Progress Files: ', inProgressFiles)
             else:
                 key = payload[0]
                 filename = payload[1]
                 content = payload[2]
 
-            if filename not in files and filename is not None:
-                fileDestination = './files/' + filename
-                file = open(fileDestination, 'a')
+            if filename not in serverFiles and filename is not None:
+                if filename not in inProgressFiles.keys():
+                    print('adding key')
+                    inProgressFiles[filename] = key
+                if filename in inProgressFiles.keys() and inProgressFiles[filename] == key:
+                    fileDestination = './Files/' + filename
+                    file = open(fileDestination, 'a')
+                    print('Writing to %s' %filename)
 
-                print('Writing to %s' %filename)
-
-                file.write(content)
-                file.close()
+                    file.write(content)
+                    file.close()
+                else:
+                    print('Writing to same file')
+                    return
             else:
-                if filename:
+                if filename is not None:
                     print('%s found in server' %filename)
                     print('Not writing data...')
-        connection.close()
+
+
+while True:
+    connection = listenerSocket.accept()
+    key = int(key) + 1
+    key = str(key)
+    server = Server(connection)
+    server.start()
+

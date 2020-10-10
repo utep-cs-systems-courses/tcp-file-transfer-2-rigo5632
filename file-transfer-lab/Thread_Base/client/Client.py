@@ -1,21 +1,20 @@
-#! /usr/bin/python3
-import os, socket, sys, re, time
-sys.path.append('../../lib')
+import os, socket, re, sys, time
+sys.path.append('../lib')
 import params
-sys.path.append('../../framed-echo')
-from framedSock import framedReceive, framedSend
+from encapFramedSock import EncapFramedSock
 
 switchesVarDefaults = (
     (('-s', '--server'), 'server', '127.0.0.1:50001'),
+    (('-lf', '--localfilename'), 'localFileName', 'filename'),
+    (('-rf', '--remotefilename'), 'remoteFileName', 'filename'),
     (('-p', '--proxy'), 'proxy', False),
     (('-?', '--usage'), 'usage', False)
 )
 
 paramMap = params.parseParams(switchesVarDefaults)
-server, proxy, usage = paramMap['server'], paramMap['proxy'], paramMap['usage']
+server, proxy, localFileName, remoteFileName, usage = paramMap['server'], paramMap['proxy'], paramMap['localFileName'], paramMap['remoteFileName'], paramMap['usage']
 
-if usage:
-    params.usage()
+if usage: params.usage()
 
 try:
     serverHost, serverPort = re.split(':', server)
@@ -25,16 +24,12 @@ except:
     sys.exit(1)
 
 
-def fileExists(fileName):
-    try:
-        fileSource = './files/' + fileName
-        file = open(fileSource, 'rb')
-    except FileNotFoundError:
-        print('Error: Could not find file')
+def fileExists(filename):
+    filename = './files/' + filename
+    if not os.path.exists(filename):
+        print('%s does not exist' %(filename))
         return None, False
-    except PermissionError:
-        print('Error: Invalid Address')
-        return None, False
+    file = open(filename, 'rb')
     return file, file.readlines()
 
 def createPayload(key, filename, data):
@@ -45,55 +40,33 @@ def createPayload(key, filename, data):
 
 clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 clientSocket.connect((serverHost, serverPort))
-while True:
-    try:
-        key = framedReceive(clientSocket, False).decode()
-        print('Server File Key: %s' %key)
-    except ConnectionResetError:
-        print('Error: Lost Connection to Server')
-        break
+framedSocket = EncapFramedSock((clientSocket, (serverHost, serverPort)))
+
+
+try:
+    key = framedSocket.receive(False).decode()
+    print('Server File Key: %s' %key)
+except ConnectionResetError:
+    print('Error: Lost Connection to Server')
+    sys.exit(1)
     
-    userInput = str(input('> '))
-    tokens = re.split(' +', userInput)
+file, data = fileExists(localFileName)
+if remoteFileName == 'filename': remoteFileName = localFileName
+data = createPayload(key, remoteFileName, data) if file else False
 
-    if len(tokens) == 3:
-        command = tokens[0]
-        localFileName = tokens[1]
-        remoteFileName = tokens[2]
-    elif len(tokens) == 2:
-        command = tokens[0]
-        localFileName = tokens[1]
-        remoteFileName = localFileName
-    elif len(tokens) == 1 and tokens[0] == 'exit':
-        framedSend(clientSocket, tokens[0].encode(), False)
-        break
-    else:
-        command = None
-        localFileName = None
-        remoteFileName = None
-    
-    if len(tokens) >= 2 and command == 'put':
-        file, data = fileExists(localFileName)
-
-        data = createPayload(key, remoteFileName, data) if file else False
-
-        if file and data:
-            for payload in data:
-                print('Sending: %s' %payload, end = ' ')
-                framedSend(clientSocket, payload, False)
-                #time.sleep(.3)
-            file.close()
-            key = str(int(key) + 1)
-            framedSend(clientSocket, key.encode(), False)
-        elif file and not data:
-            print('%s has no data' %localFileName)
-            framedSend(clientSocket, key.encode(), False)
-        else:
-            framedSend(clientSocket, key.encode(), False)
-    else:
-        print('Invalid Syntax!')
-        print('put <local-file-name> <remote-file-name>')
-        framedSend(clientSocket, key.encode(), False)
+if file and data:
+    for payload in data:
+        print('Sending: %s' %payload, end = ' ')
+        framedSocket.send(payload, False)
+        time.sleep(2)
+    file.close()
+    key = str(int(key) + 1)
+    framedSocket.send(key.encode(), False)
+elif file and not data:
+    print('%s has no data' %localFileName)
+    framedSocket.send(key.encode(), False)
+else:
+    framedSocket.send(key.encode(), False)
 clientSocket.close()
 
 
