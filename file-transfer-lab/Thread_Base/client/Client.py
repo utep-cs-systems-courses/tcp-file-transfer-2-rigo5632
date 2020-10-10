@@ -81,6 +81,7 @@ while True:
             for payload in data:
                 print('Sending: %s' %payload, end = ' ')
                 framedSend(clientSocket, payload, False)
+                #time.sleep(.3)
             file.close()
             key = str(int(key) + 1)
             framedSend(clientSocket, key.encode(), False)

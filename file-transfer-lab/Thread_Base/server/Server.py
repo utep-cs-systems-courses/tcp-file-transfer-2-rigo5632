@@ -71,4 +71,3 @@ while True:
                     print('%s found in server' %filename)
                     print('Not writing data...')
         connection.close()
-
