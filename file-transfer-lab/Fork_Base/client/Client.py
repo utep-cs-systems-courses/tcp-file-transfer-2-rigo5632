@@ -68,21 +68,21 @@ if remoteFilename == 'filename':
 data = createPayload(key, remoteFilename, data) if file else False
 
 if file and data:
-    for payload in data:
+    for payload in data: #send payloads
         framedSend(clientSocket, payload, False)
         serverMessage = framedReceive(clientSocket, False).decode()
-        if serverMessage == "Error":
+        if serverMessage == "Error": # see if server send error
             framedSend(clientSocket, key.encode(), False)
             print('Error: Server cannot re-write file. Pick another name')
             sys.exit(1)
     file.close()
-    key = str(int(key) + 1)
+    key = str(int(key) + 1) #update key and send
     framedSend(clientSocket, key.encode(), False)
 elif file and not data:
-    print('%s has not data' %localFilename)
+    print('%s has not data' %localFilename) #error: filee exists but has no data
     framedSend(clientSocket, key.encode(), False)
 else:
-    framedSend(clientSocket, key.encode(), False)
+    framedSend(clientSocket, key.encode(), False) #error: file does not exist
 
 clientSocket.close()
 

@@ -61,13 +61,10 @@ while True:
                 filename = payload[1]
                 content = payload[2]
 
-            #print(files)
             # write file
             if filename not in files and filename is not None:
                 fileDestination = './files/' + filename
                 file = open(fileDestination, 'a')
-
-                #print('Writing to %s' %filename)
 
                 file.write(content)
                 file.close()
