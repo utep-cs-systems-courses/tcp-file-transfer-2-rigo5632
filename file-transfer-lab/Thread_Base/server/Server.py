@@ -1,8 +1,10 @@
+#! /usr/bin/python3
+
 import os, socket, re, sys
 sys.path.append('../lib')
 import params
 from encapFramedSock import EncapFramedSock
-from threading import Thread
+from threading import Thread, Lock
 
 switchesVarDefaults = (
     (('-l', '--listentPort'), 'listenPort', 50001),
@@ -23,6 +25,7 @@ print('listening...')
 serverFiles = os.listdir('./Files/')
 inProgressFiles = {}
 key = '-1'
+lock = Lock()
 
 class Server(Thread):
     def __init__(self, connection):
@@ -30,8 +33,11 @@ class Server(Thread):
         self.clientSocket, self.clientAddress = connection
         self.framedSocket = EncapFramedSock(connection)
     def run(self):
-        global key, serverFiles, inProgressFiles
+        global key, serverFiles, inProgressFiles, lock
+        lock.acquire()
         self.framedSocket.send(key.encode(), False)
+        lock.release()
+
         filename = ''
         content = ''
         
@@ -47,7 +53,10 @@ class Server(Thread):
             payload = re.split(':', data)
             if len(payload) == 1:
                 key = payload[0]
-                if filename in inProgressFiles.keys(): del inProgressFiles[filename]
+                if filename in inProgressFiles.keys():
+                    lock.acquire()
+                    del inProgressFiles[filename]
+                    lock.release()
                 serverFiles.append(filename)
                 filename = None
                 content = None
@@ -63,7 +72,9 @@ class Server(Thread):
             if filename not in serverFiles and filename is not None:
                 if filename not in inProgressFiles.keys():
                     print('adding key')
+                    lock.acquire()
                     inProgressFiles[filename] = key
+                    lock.release()
                 if filename in inProgressFiles.keys() and inProgressFiles[filename] == key:
                     fileDestination = './Files/' + filename
                     file = open(fileDestination, 'a')

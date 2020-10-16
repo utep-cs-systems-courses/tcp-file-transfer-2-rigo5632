@@ -1,3 +1,4 @@
+#! /usr/bin/python3
 import os, socket, re, sys, time
 sys.path.append('../lib')
 import params
@@ -58,7 +59,6 @@ if file and data:
     for payload in data:
         print('Sending: %s' %payload, end = ' ')
         framedSocket.send(payload, False)
-        time.sleep(2)
     file.close()
     key = str(int(key) + 1)
     framedSocket.send(key.encode(), False)
