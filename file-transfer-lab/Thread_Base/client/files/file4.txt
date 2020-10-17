@@ -1,0 +1,603 @@
+20
+Writing and editing books
+Paul J Weller
+Writing or editing a book can be a daunting, exhausting, but ultimately
+exhilarating experience. On rare occasions it may even be financially
+rewarding. This chapter aims to describe something about the book
+publishing industry, how to get published, and the mechanics of writing
+and editing books.
+The book publishing industry
+Book publishing is very much a global industry and is dominated by a
+number of large multinational corporations that often have extensive
+commercial operations, of which publishing is only one. At the other
+end of the scale are smaller commercial businesses, family-run publishing houses, professional societies, and academic institutions that often
+concentrate on niche publishing for a specific audience.
+Worldwide, it is estimated that approximately 1 million books are
+published annually. The UK leads the world in book publishing, with an
+estimated 160 000 titles produced in 2004, an increase of 35 000 over
+those published in 2002. For comparison, approximately 65 000 titles
+are published annually in the USA.
+Broadly speaking, book publishing can be divided into two types:
+trade publishing, and academic or professional. Trade publishing
+includes fiction and non-fiction books that are aimed at the general
+reader. These titles have a potentially enormous market and sales can
+consequently be very large. Consider the ‘Harry Potter’ books by JK
+Rowling, for example, which have enthralled millions of children and
+adults worldwide and have made the author a multimillionaire.
+In contrast, academic publishing caters for a smaller and more specialised audience, e.g. history, law, medicine, and accounts for about
+40% of the books published in the UK. Academic publishing and publishers may be further divided into scientific, technical and medical
+(STM) publishers, and further still into individual subject specialties
+such as chemistry, engineering, medicine, nursing, pharmacy, etc. The
+The Complete Guide to Medical Writing
+ISBN 978 0 85369 667 4
+distinction is important when considering a publisher for your book (see
+below). Out of the 160 000 or so titles currently published annually in
+the UK about 3500 are medical books.
+Where to start
+The main difference between trade and academic publishing is the audience for the work. Trade publishing, as it is aimed at the general reader,
+requires particular publishers with the skills to market books to the
+public and bookstores and to compete against the best-selling titles.
+Trade publishing is extremely competitive and it is notoriously difficult
+for the novice to get published. Such publishing is outside the scope of
+this chapter, but there are many helpful publications and organisations
+that can provide advice for those tempted to try their hand at such
+writing.
+With academic publishing, in contrast, it is relatively easier to have
+your book published. Indeed, if you reach a senior enough position in
+your chosen field, publish enough research papers, or speak regularly at
+conferences it is more than likely that you will be approached by a publisher inviting you to write or edit a book. In this instance, rather like
+being ‘headhunted’ for a job, the publisher will have identified you as a
+likely candidate to produce a book on a subject about which you have
+special knowledge and which they believe will have a ready audience.
+This is known as being commissioned. Although this is flattering, it is
+just the beginning of writing and publishing a book, and much the same
+processes have to be considered as if the idea for the book was your
+own.
+The idea
+Although you’re inspired to write a book, before doing anything
+more, and certainly before you rush off to start hitting your computer
+keyboard, think very carefully about your idea. Ask yourself:
+• What is my book about?
+• Who is it for?
+• Why is my book needed?
+• Am I qualified to write it — do I have the knowledge, ability, and most
+importantly the time?
+You should think rationally about all of these questions and do some
+research to answer them. Even at this stage, the first rule of writing, or
+390 Writing and editing books
+The Complete Guide to Medical Writing
+ISBN 978 0 85369 667 4
+editing, a book is that planning and preparation are never wasted. Any
+publisher you approach will want detailed answers to these questions so
+that they can evaluate your book proposal.
+What is my book about?
+Consider what has been the trigger to make you think of writing a book.
+Perhaps you are an academic who teaches undergraduates a specialist
+course, and are frustrated that there is no suitable textbook that you can
+recommend for them to read. Perhaps you are a researcher who wishes
+to bring together in a single volume a lifetime of research in a particular field. Whatever the topic of your book, think of a short descriptive
+title and then consider a brief description of what it is about — no more
+than a paragraph.
+Who are my readers?
+Consider who you are writing the book for; think broadly, and consider
+both your main market and any secondary market. Perhaps it is a book
+for undergraduate medical students. Would it also be suitable for students of other healthcare disciplines, e.g. pharmacy? Would it be of
+interest in a number of countries, or just one? If you have an idea of the
+potential numbers of people who may be interested in your book then
+note this down; you should convey this information to any publisher
+you approach. For a publisher to even consider producing a book at a
+reasonable price it will probably need to sell at least 1000 copies. To do
+this, the potential market will need to be at least 10–20 times this
+number.
+Why is my book needed?
+Consider why your book is needed. Perhaps your idea is a summary of
+a totally new field of research and is unique. Perhaps a previous book
+has been published on the subject but is now 20 years out of date.
+Perhaps there is a comprehensive and expensive book on the subject and
+you want to write a short, cheaper, introduction for a wider, nonspecialist audience. Whatever your answer to this question, you should
+be diligent in your research of other similar titles that have been published. Look at bookshop and library holdings and web catalogues
+(such as Amazon) to consider similar titles. Note down their details,
+strengths, weaknesses, age, price, etc., and contrast them with your own
+Where to start 391
+The Complete Guide to Medical Writing
+ISBN 978 0 85369 667 4
+proposed book. If you find a recently published book very similar to
+your own idea you may have a very hard time convincing any publisher
+to produce it. However, even if there are lots of books close to your own
+idea do not necessarily be disheartened. There is an old publishing saying: ‘If there are 100 books on a subject then publish the 101st, because
+someone must be buying them’.
+Am I qualified to write the book?
+Consider why you should be the one to write a book on a specific subject. Do you have particular knowledge or skills that make you an
+expert? Do you have the ability to write informatively for your chosen
+audience? Ideally, you should have some demonstrable previous writing experience, such as research papers, book chapters or a thesis.
+When approaching a publisher enclose a CV and a publications list to
+demonstrate your expertise or previous writing background. An experienced writer will probably be more highly valued than a novice.
+Likewise, a Nobel Prize-winner will be more highly sought-after than a
+PhD student.
+Finally, consider the impact writing a book will have on your sanity, relationships and work. Writing a book, though rewarding in many
+ways, is enormously challenging and time-consuming and requires considerable determination. Most probably you will be writing as a ‘hobby’
+in addition to all the other things that were previously happening in
+your life, and this will almost certainly mean you will have to give something up to make time for ‘the book’. It is generally better to write little
+and often, and it is a good idea to think about your commitments.
+Could you devote every Sunday morning for the next 12 months to
+writing, for example? Writing a book should be enjoyable, so if you
+think it would become a chore it is probably better not to even start.
+Finding a publisher
+The key to finding the right publisher is to do your homework. Again,
+look in bookstores, libraries and online book catalogues to identify publishers who publish work in your chosen subject. In addition, check the
+various publishing and writers’ directories. Such directories list publishers and include the type of subject they publish; they also often indicate
+the number of titles published each year by them. This is obviously a
+useful guide to the scale of the publisher. The more titles published, the
+more infrastructure the publisher will have, for example it may have
+392 Writing and editing books
+The Complete Guide to Medical Writing
+ISBN 978 0 85369 667 4
+better global marketing capability than a smaller publisher. However,
+bigger doesn’t always mean better, and size is no indicator of quality.
+Smaller publishers may have a niche market to themselves, or may have
+more prestige, e.g. be part of a professional body or society. Smaller
+publishers are generally also associated with a more personal relationship
+with authors, because they publish fewer works.
+You should look for a publisher that has values that are similar to
+your own. If attention to quality is important to you then you should
+avoid publishers who have produced books you consider to be badly
+designed, copyedited or printed. If at all possible, ask friends and colleagues if they have worked with a particular publisher before, and
+consider their experience and recommendations.
+Approaching a publisher with a book proposal
+Once you have identified a publisher for your book you should get in
+touch with them. Some authors will contact several publishers at the
+same time, although publishers dislike this. If you do so, you should
+inform the publisher that your proposal is also under consideration by
+others.
+You should, if possible, look at a publisher’s website for information on proposing book projects. Publishers will often have specific
+guidance on the type of information they require to consider your project. You should also try to identify a specific person to contact. This
+will usually be the Commissioning Editor (called the Acquisitions Editor
+in the US). Generally, publishers like to receive a formal written proposal for consideration. However, an informal email or phone call is
+appropriate if you are unsure whether you should submit the proposal
+to that publisher, i.e. you think your idea may not be in their specialist
+field.
+Your proposal should ideally include the following (note the
+similarities to the information considered by you earlier):
+• Book title
+• Author details (enclose a CV and a publications list indicating previous
+writing experience)
+• Description of the book
+• Description of the market for the book (and potential market size if known)
+• List of chapter titles, with a brief description of the content of each
+• Estimated length of the book in number of words
+• Estimated number of illustrations and photographs. Do you think colour
+will be required?
+Where to start 393
+The Complete Guide to Medical Writing
+ISBN 978 0 85369 667 4
+• Proposed date for completing the book
+• Competing books — what features distinguishes your book from the
+competition?
+• Potential reviewers of your proposal
+• Sample chapter.
+In many respects, submitting a book proposal is like applying for a job.
+A well-considered and presented proposal will convince a publisher that
+you are organised and capable of writing a book.
+You should note that generally it is not a good idea to write an
+STM book without first approaching a publisher. To save a lot of wasted
+effort it is far better to prepare a detailed, well-written proposal and
+perhaps a sample chapter.
+The publisher will review your proposal in-house with editorial,
+production, sales and marketing input, and often with external peer
+reviewers. A good publisher will provide constructive feedback on your
+proposal, often with detailed suggestions about the contents, style
+or proposed market. This may take several months. Even if the publisher rejects your idea you should consider their comments carefully, so
+that you can modify your proposal should you choose to submit it
+elsewhere.
+If the publisher accepts your proposal they will then negotiate financial and other terms with you, which will be spelt out in a formal contract
+(see below). You should now start the writing process in earnest.
+Planning your book
+Once you have established the broad scope and audience for your book
+it is vital to establish a detailed structure. Write down a table of contents, listing all of the chapter headings that should be included, and
+arrange them in a coherent order. This is the skeleton to which the flesh
+of your book — your words — will be attached. Consider what each
+chapter should contain, and write down appropriate subheadings showing the structure of individual chapters. You may want to establish a
+regular structure for every chapter, e.g. each one will begin with an
+introduction and end with a further reading section. You should also
+establish the tone and style of writing you intend to use: a professional
+reference work should read very differently from an undergraduate textbook. Consider whether you will include references: roughly how many
+per chapter, and what will the reference style be?
+Ideally, ask some colleagues to peer-review your chapter outline.
+They may have some valuable suggestions about additional material
+394 Writing and editing books
+The Complete Guide to Medical Writing
+ISBN 978 0 85369 667 4
+that should be included, or how the contents should be structured.
+Remember when writing for a global audience that practice or methods
+elsewhere may be different from what you are familiar with. To make
+your book appeal to as wide a market as possible you should include
+examples from as wide a field as possible. This, of course, does not
+apply if you are writing for a clearly defined, narrower market, e.g. UK
+undergraduate pharmacology students.
+Consider approximately how many illustrations, photographs,
+tables, bullet lists, etc. you think should be included with each chapter.
+It is particularly important to consider whether colour photographs or
+illustrations should be included, as this will add to the production
+expense incurred by the publisher. For a dermatology text, for example,
+colour photographs would probably be essential. It is increasingly common for textbooks to be lavishly illustrated in colour and imaginatively
+designed.
+You should also carefully consider the size and length of the book.
+You should have in mind a vision of the book and its use. Do you see it
+as a substantial, expensive, hardback library reference book, or a short,
+cheaper, paperback textbook purchased by individual students? Look at
+similar published books to get an idea of the number of pages per chapter and per book. Typically, a published book will have 400 words per
+page. You should estimate the number of words per chapter, and stick
+to this guide when writing.
+It is one of the bad writing sins to produce a book much bigger or
+smaller than originally proposed: be realistic at the outset about what is
+needed and how much you can write! Consider whether every chapter
+should be allocated the same number of words, or whether some should
+be longer or shorter. Typically you might want to write a book with 10
+chapters, 100 000 words and 50 illustrations. Consider other pieces of
+writing you have done, such as magazine articles, research papers, etc. to
+get a feel for the number of words required to convey the information
+you want to impart in a book chapter.
+Having considered all of the above, you should finally consider
+whether you are going to write the book entirely on your own. The
+options could be to do this, to work with another author or authors, or
+to edit the book, with the majority of the chapters being written by others. If you decide to write the book on your own you should carefully
+plan a writing schedule and set yourself a realistic deadline for completion. At least one year is a typical timescale. Your goal might then be to
+write every Sunday morning for 3 hours and to complete one chapter
+per month.
+Where to start 395
+The Complete Guide to Medical Writing
+ISBN 978 0 85369 667 4
+Editing a book
+One of the key decisions in producing a book is to decide whether it is
+to be written by you alone or in collaboration with others. In STM publishing multicontributor edited works are very common. In theory, editing a book (such as this one) should be less work than writing it alone,
+as the majority of the text will be written by others. However, editing a
+book presents distinct challenges.
+As editor, your first task is to plan the detailed structure of the
+book very clearly. You will then need to find authors willing to work on
+the project to a deadline that you specify. Individual authors should
+have relevant expertise that qualifies them to write the chapters, and
+should be given clear written and verbal guidance on what is required
+of them: the length of the chapter, the style of writing, number of references and figures etc. It is a good idea to inform chapter authors about
+the structure of the book as a whole, and for them to be aware of who
+is writing other chapters. Generally, it is a good idea to ask authors to
+produce a detailed chapter outline, with headings, which the editor then
+agrees is satisfactory.
+The publisher will require from you contact details for each contributor and information about what they are writing and the writing
+schedule. The publisher will advise you about the financial and contractual arrangements for the individual contributors. Generally, it will be
+agreed that chapter authors will be clearly acknowledged in the published book and will receive a fee or a share of royalties for writing (see
+below). Chapter authors will usually also receive a copy of the book on
+publication.
+In theory, edited books can be written more quickly, as many
+authors are working at the same time, but an edited book will proceed
+only at the pace of the slowest author. Typically, the editor should allow
+3–6 months for an author to write a chapter. Any less and the author
+will probably decline to work on the project; any more and there is a
+risk that they will give the project a low priority and forget to complete
+the chapter (or even to begin writing). The editor should regularly keep
+in touch with chapter authors to monitor progress.
+Although having many different authors involved in a book can be
+an advantage as they can bring their own specific experience to give a
+broad overview to a book, this can also be a disadvantage. Books with
+many contributors can be repetitious, and writing styles and extent of
+coverage can vary widely between chapters. A good editor will have prevented this by careful planning and briefing of chapter authors. Once all
+396 Writing and editing books
+The Complete Guide to Medical Writing
+ISBN 978 0 85369 667 4
+authors have submitted their chapters a good editor will also carefully
+move, delete, rewrite and generally improve the text to ensure a consistency of approach and emphasis throughout. To do this can take several
+months, and this should be allowed for in the schedule discussed with
+the publisher. Only once the work has been edited and all the material
+is complete is it ready to be submitted to the publisher.
+Unfortunately, with an edited book, it is common for at least one
+chapter author to fail to complete their work to schedule. The editor
+then needs to decide whether the author’s deadline should be extended,
+a replacement author found (sometimes the editor will have to write the
+chapter themselves), or to remove the chapter from the book. As an editor you will need to be ruthless on this point if you are to avoid your
+book being delayed excessively.
+Books with several authors
+Instead of editing a book, with a different author or authors per chapter, you may decide to write a book with a handful of other authors. In
+such a case it is again important to plan the book’s structure carefully
+and agree in advance the division of labour among your fellow authors.
+Individual authors may be assigned to write specific chapters, or may
+write parts of chapters. As with an edited work it is important that the
+final book is coherent and has a consistent style and ‘voice’.
+Writing a book
+Having thoroughly planned the outline of your book and found a publisher, it is now time to get down to the task of writing. It is a good idea
+to write a little and often: most authors will find things more manageable and satisfying if achievable goals are set, such as to complete one
+chapter every month. Once you have finished writing, it is a good idea
+to set the book aside and try to forget about it for a few weeks. Return
+to the text refreshed and read it through to edit and rewrite as necessary.
+A good publisher will have provided some guidance on how to
+submit the completed book and will often provide detailed style or writing guides to assist authors. A publisher will appreciate your following
+their submission instructions. Generally these will specify such things as
+‘the author should submit a printed copy of the book along with an electronic copy as wordprocessed files on a disk’. Most publishers will ask
+that the electronic files are broken down into one per chapter. Publishers
+very rarely ask authors to use complex formatting, so long as the
+Where to start 397
+The Complete Guide to Medical Writing
+ISBN 978 0 85369 667 4
+structure of the text layout, such as headings and subheadings, is
+clearly indicated.
+You should always retain a secure electronic and printed copy of
+your work. It is not unknown for files or entire books to be lost in the
+post or corrupted via email, and it would be a tragedy to lose months
+— perhaps years — of work.
+It may seem obvious, but the work submitted to the publisher
+should be the final version and should be complete. It should thus
+include all artwork, preliminary material (such as the contents list and
+preface) and index if you were required to produce one. At this stage
+you should also supply the publisher with any documentation giving
+permission from other copyright holders to reproduce work from other
+published sources that you have used in your book. Your publisher
+should have advised you about this. They should similarly have advised
+you about submitting photographs, diagrams or other artwork for
+inclusion in your book.
+Publishing contracts
+Once you have verbally agreed to work with a publisher a formal written contract will be sent to you. This should be signed and dated by you,
+and by your co-authors if required. Someone representing the publisher
+will also sign the agreement; a signed copy will be returned to you for
+your records.
+Publishing contracts vary in size and complexity but are generally
+fairly standard in the terms they specify. They are legal documents, and
+should you choose to do so you could ask a specialist to consider the
+contract on your behalf. Societies or organisations representing writers
+will often provide this service to members. The contract is important, as
+it formally commits both you and the publisher to work on a project.
+Books may take several years to produce, and the individuals who
+initially committed to publish your book may not be involved in the
+project once it becomes time to submit the manuscript. However,
+the contract remains as a written record of what was agreed between
+you and the publisher.
+The following are selected important terms that a publishing
+contract will specify:
+• Author(s) or editor(s) of the project
+• Proposed title of the work
+• Completion date of the work (submission date to the publisher)
+398 Writing and editing books
+The Complete Guide to Medical Writing
+ISBN 978 0 85369 667 4
+• Format of the work (e.g. number of words, illustrations, photographs,
+etc.)
+• Rights assigned to the publisher
+• Financial terms (e.g. payments to the author and schedule)
+• Termination of the agreement and reversion of rights.
+Of these, probably the one that causes most anxiety to authors is the
+completion date. Most publishers will be reasonably flexible to amend
+this date if necessary, although it is vital to keep them informed of your
+progress.
+Probably the most important considerations are the financial
+aspects of the project, discussed below, and the rights (copyright)
+associated with the work.
+Copyright is internationally recognised by law as a means to specify how the output of creative or intellectual endeavour may be distributed and used by others. The duration of copyright protection varies
+from country to country, but for written work is usually for the lifetime
+of the author plus either 50 or 70 years. Publishers will usually ask that
+authors assign copyright to them in its entirety, although this is generally not advisable as it could restrict your future options for using or
+exploiting your work. Today it is increasingly common for authors to
+retain the copyright in their work but to grant the publisher limited
+rights (a licence) to exploit it. For example, an author might grant the
+publisher the exclusive rights to publish their work in English only, or
+to sell the work only in North America rather than globally. It is also
+particularly important to consider what the contract says about future
+editions of the work: are you giving the publisher the rights to publish
+every edition, or only for a specific edition or number of editions? In
+addition, publishing contracts will specify rights relating to other formats of your work, not just the printed book, e.g. are you giving the
+publisher permission to publish your work electronically (i.e. online)?
+(For more information on copyright see page XX.)
+In addition to the obligations you will have as an author, the publisher also has obligations to you and these should be clearly stated in
+the contract. Such obligations might include a commitment on how
+your name is represented in association with the published work, or a
+commitment to publish your work within a certain time after delivery
+of the manuscript.
+Termination of the publishing agreement should also be stated
+clearly in any contract. You should consider, for example, what happens
+to your book, and your rights as an author, if the book goes out of print,
+or if the publisher is sold or ceases publishing activities.
+Publishing contracts 399
+The Complete Guide to Medical Writing
+ISBN 978 0 85369 667 4
+Editors’ publishing agreements are different from an author’s publishing agreement, mainly in specifying the duties and role of the editor.
+With an edited work, the publisher will negotiate specific agreements
+with chapter contributors: these are often very simple documents
+compared to a sole author’s or editor’s contract.
+You should remember that publishing contracts and the specific
+terms they contain are negotiable — up to a point. Ultimately, if you
+and the publisher wish to see your work published both parties must
+agree terms that they consider reasonable and practical.
+Finances
+If financial gain is your sole motivation in writing books then you would
+probably be better advised to pursue other, more lucrative endeavours.
+Indeed, even other forms of writing, such as journalism, can be far more
+profitable than writing books. A Society of Authors survey in 2000 suggested that 61% of its members earned less than £10,000 per year from
+writing, and the situation is probably worse for STM authors. One doctor calculated that he earned the equivalent of less than 50p per hour of
+work from a textbook he wrote.1
+However, writing books can occasionally be financially very
+rewarding, and there are many other non-financial motivations.
+Certainly having a book published will enhance your CV and advance
+your professional career. It will also mark you out as an expert in the
+field, and will probably lead to invitations to write other material and
+speak at conferences. For STM authors, knowing that they have completed a book and added to the body of work on a subject is also a
+source of considerable satisfaction.
+Royalties
+Typically, an author will either receive a fee for writing a book or, more
+commonly, a royalty from the publisher. The royalty is usually a percentage of the revenue obtained from each copy sold, although sometimes it is calculated as a percentage of the list price of a book. On
+average, for each copy of a book sold a publisher will receive around
+65% of the list price. The author royalty is usually 10%, although this
+can vary between 5% and 15%; a higher rate than this is exceptional.
+The income to the author is thus related to the number of copies of the
+book sold. Publishers usually pay royalties once or twice a year. In some
+cases a fee or an advance against the royalty may be paid. For example,
+400 Writing and editing books
+The Complete Guide to Medical Writing
+ISBN 978 0 85369 667 4
+the publisher might pay the author £500 on signing the contract, followed by a further £500 on delivery of the completed manuscript. If this
+fee is an advance against the royalty then the author will receive no
+further payments until sufficient copies have been sold equivalent to a
+royalty of £1000.
+Financial terms can often be quite complicated with, for example,
+increased royalty rates being applied after a certain number of copies
+have been sold. Royalties may also be obtained from different rights
+granted to the publisher, e.g. if you grant the publisher electronic rights
+to your work you should receive a royalty from any revenues obtained
+from this delivery method.
+For edited books, the editor will similarly usually receive a royalty
+based on the number of copies sold. Editors’ royalty rates are generally
+lower than for authors: 5% is typical. Chapter contributors generally
+receive a one-off fee for their work (e.g. £50–£200), although they may
+receive a royalty from the publisher (e.g. 5% divided equally between
+all the contributors).
+When more than one author or editor is involved in a project the
+publisher will divide the royalty or fee as advised by the authors or
+editors.
+In addition to receiving a royalty or a fee for their work, authors
+and editors should clarify with the publisher (and have this written into
+the publishing agreement) any other benefits they will receive. This
+might include travelling expenses to attend meetings, or support to
+purchase equipment or materials.
+The contract should also state the number of free copies of the
+published work that the authors or editors receive: typically this is
+around 10 copies each.
+What the publisher does
+Authors often have a relatively vague idea of what publishers do and how
+long it will take to publish their work. The editorial goal of a good publisher is to help an author express themselves as clearly and accurately as
+possible. Typically, for an STM book the time taken from delivery of the
+manuscript to actual publication can be anything from 3 to 12 months. A
+publisher will usually indicate to an author who will be involved in the different stages of the publication process and when these will occur. Most
+people involved in the publication of your book will not actually work
+directly for the publisher but will be employed in a freelance capacity or
+on a contract basis to supply a service, such as typesetting.
+What the publisher does 401
+The Complete Guide to Medical Writing
+ISBN 978 0 85369 667 4
+On delivery of your manuscript, someone at the publisher, usually
+the Development or Desk Editor, will assess the work to make sure that
+it is complete and conforms to the specifications outlined in the publishing agreement. Often the work will be peer-reviewed and suggestions be
+made for changes or the inclusion of additional material before the
+manuscript is finally accepted.
+Copyediting
+Unless you have been asked by the publisher to produce work designed
+as pages ready to print with no further intervention by the publisher
+(camera-ready copy) your work will be handed over to a copyeditor.
+The copyeditor’s role is to read through your work carefully to
+ensure accuracy and consistency in how the material is presented. This
+will mean checking the consistency of spellings, abbreviations and headings, ensuring that cited references are complete and accurate, etc. The
+copyeditor will usually be required also to improve the use of grammar
+and language to aid understanding of the text. Copyediting changes outside a publisher’s standard ‘style guide’ will often involve discussion
+with the author. The copyeditor will also structure the text, tables, figures, etc. in such a way to facilitate typesetting of the book. They may
+also be required to check that all necessary permissions have been
+obtained from copyright holders where material from other published
+sources is reproduced.
+Once the copyediting has been completed page proofs will be produced by the typesetters to a design specified by the publisher. Proofs
+will then be sent to the author for checking and correction. Before the
+widespread use of computers, making corrections to page proofs was
+very expensive. Although today the process is much easier and hence
+cheaper, changes to proofs can still be complicated, expensive, and cause
+delays in the production schedule. Any change also risks introducing
+errors in the text or page layout. Authors are therefore generally encouraged to confine themselves to essential changes only, either by correcting factual omissions or errors, or by improving the layout of the pages.
+Publishers will usually employ a proofreader (a different person
+from the copyeditor), who will independently read through the proofs,
+the copyeditor’s changes to the manuscript, and the author’s corrections
+to the proofs to ensure that the typesetter can make final adjustments to
+the text ready for the pages to be printed.
+If an index is to be included with the book it will be constructed
+at this time before also being typeset.
+402 Writing and editing books
+The Complete Guide to Medical Writing
+ISBN 978 0 85369 667 4
+The book will then finally be printed and bound. This stage of the
+publishing process — essentially the physical manufacture of the book
+— can typically take 4–8 weeks. (For further information about the
+editing process, see page XX.)
+Publication and promotion
+In addition to manufacturing a book, publishing is also about marketing and selling. Several months before publication the publisher will
+prepare a marketing plan to show how potential purchasers of your
+work will be alerted to its publication. Most publishers welcome marketing input from authors, although it should be remembered that they
+will be working to a finite budget. Advertising, direct mail, and increasingly electronic methods (websites and email) will all be used to alert
+bookstores, libraries and readers to your work. (For more information
+about marketing see page XX.)
+Indexing
+If an index to a book is required the publisher will often arrange for it
+to be produced by a specialist indexer. However, sometimes the author
+or editor will be encouraged to supply one. This can be a daunting and
+time-consuming task for the inexperienced, but there are a number of
+tips that will help you to produce a useful, accurate index.
+Function of an index
+The purpose of an index is to guide the reader rapidly to specific topics
+of interest in a book. It is therefore important to consider the readership
+and to produce an index with a sufficient level of detail to be comprehensive without being so detailed that it is unusable. As a general guide
+you should aim to have no more than three to five index entries from
+each page. These should be both concepts and proper names. Only
+pages where useful information about a topic is given should be
+included; passing references should be omitted. Generally, chapter
+headings and subheadings form the basis of index entries.
+Effective indexing methods
+Work on the index may be started from your wordprocessor files, but
+ultimately you will need to incorporate final page numbers and so it is
+often easiest to work from numbered page proofs.
+Indexing 403
+The Complete Guide to Medical Writing
+ISBN 978 0 85369 667 4
+You should read through the proofs highlighting any text you
+think should be indexed — remember, this can be from headings, the
+main text or tables, and should include specific names, phrases or concepts. You should only include words or phrases that you believe a
+reader will look up. You should also include sub-entries, for example
+you may be indexing a chapter that discusses drugs used in heart disease
+— index the class of drug as well as the drug names:
+Antihypertensives, 20
+Atenolol, 24
+Beta-blockers, atenolol, 24
+Propranolol, 25
+Beta-blockers, propranolol, 25
+Antihypertensives, drug interactions, 30
+Cross-references should also be included to navigate around the index
+and text:
+Epinephrine see adrenaline
+and under adrenaline:
+Adrenaline, discovery and synthesis, 108
+Adrenaline, sites of action, 110
+Also include additional cross-references:
+Malaria, 114 see also Antimalarials
+It can be useful to include in the index words that are commonly used
+as synonyms for words or terms used in the text, especially if they
+appear separately in the index:
+Renal failure see Kidney failure
+Common abbreviations should also be indexed as cross-references:
+EGF see Epidermal growth factor
+Once you have created your list of index entries they should be keyed
+into a wordprocessor file and sorted. Index entries are generally best
+sorted on a letter-by-letter basis, i.e. ignoring spaces and hyphens. Once
+you have sorted the list, multiple entries can be organised into a single
+entry and sub-entries rationalised, e.g.:
+Atenolol, 23,
+Atenolol, 106
+to
+Atenolol, 23, 106
+404 Writing and editing books
+The Complete Guide to Medical Writing
+ISBN 978 0 85369 667 4
+and
+Adrenaline
+discovery and synthesis, 108
+sites of action, 110
+The completed index should then be sent to the publisher for typesetting.
+Reference
+1. Jacobs A (2000) How true! Rapid responses to Tim Albert: How to become a
+book author.Br Med J Career Focus. Available on http://careerfocus.bmjjournals.
+com/cgi/eletters/320/7237/S2-7237. [accessed 16 May 2006]
+Further reading
+Albert T (2000) How to become a book author. Br Med J Career Focus 320:
+S2–7237.
+Banks M (1998) Get your book published. BMJ 317: 1715–1718.
+Directory of Publishing 2007. London: Continuum International Publishing Group,
+2006.
+Turner B, ed (2005) The Writer’s Handbook 2005. London: Macmillan.
+Writers’ and Artists’ Yearbook 2005. London: A & C Black.
+Useful websites
+Nielsen BookData
+www.whitaker.co.uk
+Publishers Association
+www.publishers.org.uk
+Society of Authors
+www.societyofauthors.net
+Useful websites 405
+The Complete Guide to Medical Writing
+ISBN 978 0 85369 667 4

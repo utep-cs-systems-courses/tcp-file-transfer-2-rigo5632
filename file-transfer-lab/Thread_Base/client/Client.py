@@ -20,6 +20,10 @@ server, proxy, localFileName, remoteFileName, usage = paramMap['server'], paramM
 # display params usage
 if usage: params.usage()
 
+# communicate with proxy server
+if proxy:
+    server = '127.0.0.1:50000'
+
 # get server info 
 try:
     serverHost, serverPort = re.split(':', server)
@@ -62,7 +66,7 @@ data = createPayload(key, remoteFileName, data) if file else False
 
 if file and data: # file exists and that file has data to send
     for payload in data:
-        print('Sending: %s' %payload, end = ' ')
+        #print('Sending: %s' %payload, end = ' ')
         framedSocket.send(payload, False)
     file.close()
     key = str(int(key) + 1) # update server key
